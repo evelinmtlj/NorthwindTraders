@@ -10,7 +10,7 @@ import java.util.List;
 public class Main {
 
     private static String username = "root";
-    String database = "northwind";
+    private static String password = "yearup24";
     private static String databaseUrl = "jdbc:mysql://localhost:3306/northwind";
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
@@ -62,7 +62,7 @@ public class Main {
         return products ;
 
     }
-//
+
 }
 
 
