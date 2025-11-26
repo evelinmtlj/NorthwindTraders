@@ -101,7 +101,7 @@ public static List<Customer> getCustomers() throws SQLException,ClassNotFoundExc
 
         //load the MySQL Driver
     Class.forName("com.mysql.cj.jdbc.Driver");
-    String query = "select ContactName,CompanyName, City, Country,Phone from Customers";
+    String query = "select ContactName,CompanyName, City, Country,Phone from Customers Order By Country ";
 
     try (Connection connection = DriverManager.getConnection(databaseUrl, username, password);
          Statement statement = connection.createStatement();
